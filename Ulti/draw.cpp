@@ -1,9 +1,11 @@
 #include "draw.h"
 #include "game.h"
 #include <iostream>
+#include "game.cpp"
 
 
 using std::cout;
+
 
 void Clear()
 {

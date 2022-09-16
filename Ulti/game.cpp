@@ -9,7 +9,7 @@ using std::endl;
 
 
 	string playername = "";
-	int C_playerscore;
+	int playerscore;
 	int playerhealth = 3;
 	void startgame() {
 		cout << "===PLAYER NAME===" << endl;
