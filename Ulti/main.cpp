@@ -7,7 +7,6 @@
 int main() {
 	//just an entry point for the game itself nothing much here.
 	
-	
 	startgame();
 
 	return 0;

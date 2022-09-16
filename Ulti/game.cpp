@@ -1,4 +1,5 @@
 #include "game.h"
+#include "genlevel.h"
 #include <iostream>
 #include <string>
 using std::cout;
@@ -8,6 +9,8 @@ using std::endl;
 
 
 	string playername = "";
+	int C_playerscore;
+	int playerhealth = 3;
 	void startgame() {
 		cout << "===PLAYER NAME===" << endl;
 		cin >> playername;
@@ -29,5 +32,5 @@ using std::endl;
 	}
 
 	void setupgameenv() {
-
+		genlevel lev = genlevel(); lev.generate();
 	}
