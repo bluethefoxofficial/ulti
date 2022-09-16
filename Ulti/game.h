@@ -1,10 +1,9 @@
 #pragma once
 
 
-class game
-{
-	void start() {
-		
-	}
-};
+
+void startgame();
+
+void setupgameenv();
+
 
