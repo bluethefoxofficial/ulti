@@ -17,14 +17,32 @@ void drawenviromentui() {
 	//draws the enviroment ui place above drawui unless you want the score ui to be above the enviroment
 }
 
-void drawui() {
-   cout << "\n    playername:\n    " 
-		<< playername 
+
+
+
+
+void draw::Clear()
+{
+
+	//bit crude but it works.
+	cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+}
+
+void draw::drawenviromentui()
+{
+	//TODO MAKE THIS
+}
+
+void draw::drawui()
+{
+	cout << "\n    playername:\n    "
+		<< playername
 		<< "\n\n    Player score:\n"
 		<< playerscore;
 }
 
-void drawhealth() {
+void draw::drawhealth()
+{
 	string healthbar = "";
 	cout << "\nHealth: ";
 }

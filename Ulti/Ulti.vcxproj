@@ -130,6 +130,7 @@
     <ClInclude Include="draw.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="genlevel.h" />
+    <ClInclude Include="he_physics.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="playerhandler.h" />
   </ItemGroup>
@@ -137,6 +138,7 @@
     <ClCompile Include="draw.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="genlevel.cpp" />
+    <ClCompile Include="he_physics.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="playerhandler.cpp" />
   </ItemGroup>

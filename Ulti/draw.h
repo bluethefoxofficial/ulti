@@ -1,8 +1,17 @@
 #pragma once
+
+#include <iostream>
+
+using std::string;
 class draw
 {
 
-public:
+
+
+	int playerhealth;
+	int playerscore;
+
+    string playername;
 	void Clear();
 
 	void drawenviromentui();

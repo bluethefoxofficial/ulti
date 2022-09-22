@@ -30,6 +30,9 @@
     <ClInclude Include="playerhandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="he_physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -45,6 +48,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="playerhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="he_physics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
