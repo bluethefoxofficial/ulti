@@ -1,6 +1,7 @@
 #include "genlevel.h"
 #include <iostream>
 #include <string>
+
 class levelgeneration {
 	int seed = std::rand(); //UNUSED currently
 	char previouslevel[20][20] = {};

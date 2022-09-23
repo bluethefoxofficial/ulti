@@ -6,4 +6,11 @@
 const char player = 'H';
 
 
-//handle stuff
+//handle stuff i guess
+
+
+
+//interact wityh buttons in the enviroment
+void interact() {
+
+}
