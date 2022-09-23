@@ -13,32 +13,21 @@ void Clear()
 	cout << "\x1B[2J\x1B[H";
 }
 
-void drawenviromentui()
+void drawenviromentui(char grid)
 
 {
 	
 	//TODO MAKE THIS
 	cout << "=======================================================\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
-	cout << "|\n";
+
+	char mat[20][20];
+	
+	for (int i = 0; i < 20; i++) {
+		for (int j = 0; j < 20; j++) {
+			std::cout << mat[i][j] << ' ';
+		}
+		std::cout << std::endl;
+	}
 	cout << "=======================================================\n";
 }
 

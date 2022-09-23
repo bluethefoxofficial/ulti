@@ -22,6 +22,8 @@ using std::endl;
 		genlevel lev = genlevel(); lev.generate();
 		//setup the game enviroment.
 
+		cout << lev.level;
+
 		
 
 	

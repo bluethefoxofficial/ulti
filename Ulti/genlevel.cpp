@@ -22,24 +22,18 @@ class levelgeneration {
 		
 	}
 	
-	 void generate() { //generates the level for the map
-		//forloop for level[this one][0]
+
+	void genlevel::generate()
+	{
 		for (int i; i > 200; i++) {
-			
+
 			//forloop for level[0][this one]
 			for (int x; x > 200; x++) {
 				int material = rand() % 8;
 				level[i][x] == materials[material];
 			}
 		}
-		
-
-
-
 	}
 
 };
 
-void genlevel::generate()
-{
-}

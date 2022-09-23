@@ -2,10 +2,12 @@
 #include <string>
 #include "game.h"
 #include "draw.h"
+#include "genlevel.h"
 
 int main() {
 	//just an entry point for the game itself nothing much here.
 	
+
 	startgame();
 	Clear();
 	drawenviromentui();
