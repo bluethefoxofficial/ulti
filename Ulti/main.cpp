@@ -39,6 +39,7 @@ void playerinit() {
 
 	if (action == "n") {
 		std::cout << "Generating and initilizing new level....";
+		destroy();
 		generate();
 	}
 	else if (action == "l") {
