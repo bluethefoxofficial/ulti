@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "main.h"
+#include "level.h"
 
 
 //i need these to be global, as these will be changed and can be changed by the player and other scripts.
@@ -38,9 +39,11 @@ void playerinit() {
 
 	if (action == "n") {
 		std::cout << "Generating and initilizing new level....";
+		generate();
 	}
 	else if (action == "l") {
 		std::cout << "Please select a level file...";
+		loadfromfile(0); //WIP
 	}
 	else if (action == "e") {
 		std::cout << "exising";
