@@ -130,15 +130,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="draw.h" />
-    <ClInclude Include="game.h" />
-    <ClInclude Include="genlevel.h" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="draw.cpp" />
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="genlevel.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="level.h" />
+    <ClInclude Include="main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

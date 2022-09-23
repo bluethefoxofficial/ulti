@@ -1,5 +1,5 @@
 #pragma once
 
-int main();
+void playerinit();
 
-
+void Clear();
