@@ -2,8 +2,18 @@
 #include <string>
 #include "main.h"
 #include "level.h"
+#include <filesystem>
 
 
+
+
+#ifdef _WIN32
+#define CLEAR "cls"
+#else //In any other OS
+#define CLEAR "clear"
+#endif
+
+using std::filesystem::current_path;
 //i need these to be global, as these will be changed and can be changed by the player and other scripts.
 std::string playername = "";
 int playerscore = 0;
@@ -40,25 +50,48 @@ void playerinit() {
 	if (action == "n") {
 		std::cout << "Generating and initilizing new level....";
 		destroy();
-		generate();
+		generateLevel();
 	}
 	else if (action == "l") {
 		std::cout << "Please select a level file...";
-		loadfromfile(0); //WIP
+		
 	}
 	else if (action == "e") {
 		std::cout << "exising";
 		return;
 	}
 	else if (action == "a") {
-		std::cout << "About \n Ulti by kesssan robertspn 2022.";
+		std::cout << "About \n Ulti by kesssan robertson 2022.";
 	}
 
  	
 }
 
+void Savedgamedatalist() {
+
+	
+//get the current directory and list the files
+	std::string path = current_path().string();
+	std::cout << path << std::endl;
+	std::cout << "Saved games: \n";
+	for (const auto& entry : std::filesystem::directory_iterator(path)) {
+		std::cout << entry.path() << std::endl;
+	}
+
+	//wait for user input
+	std::string x = "";
+	std::cout << "select a save file to load\n>";
+
+	std::cin >> x;
+	
+
+
+
+
+}
+
 void Clear()
 {
 	//clears the console making it empty and ready for the next output via cout
-	std::cout << "\x1B[2J\x1B[H";
+	system(CLEAR);
 }
